@@ -1,0 +1,41 @@
+•<h1></h1>: Título (escalável para h2, h3, em diante)
+•<p></p>: Parágrafo
+•<br>: Quebra de linha
+•<img>: Inserção de imagens
+•<!---->: Comentários invisíveis
+•link:favicon: Inserção de favicon
+•<strong></strong>: Negrito
+•<em></em>: Itálico
+•<mark></mark>: "Marca-texto"
+•<del></del>: Riscado
+•<ins></ins>: Sublinhado
+•<sub></sub>: Subescrito
+•<sup></sup>: Sobescrito
+•<code></code>: Fonte para códigos
+•<pre></pre>: Ambienta o texto da forma digitada no código
+•<q></q>: Citação simples
+•<blockquote></blockquote>: Citação com quebra de linha
+•<abbr></abbr>: Significado de abreviações
+•<bdo></bdo>: Escrita invertido
+•<ol></ol> + <li></li>: Lista ordenada
+•<ul></ul> + <li></li>: Lista simples
+•<dl></dl> + <li></li>: Lista de definição (ex.: dicionário)
+•<a></a>: Link (externo ou interno)
+-rel="external": (usado dentro de <a>) Informa aos algorítimos que o link é externo a site
+-rel="nofollow": (usado dentro de <a>) Informa aos algorítimos que não me responsabilizo pelo conteúdo do site de origem do link
+-rel="intern": (usado dentro de <a>) Informa aos algorítimos que o link é interno ao site
+-target="-blank": Abre o link em uma nova guia
+-target="_self": Abre o link na mesma guia
+-type="application/extensão": informa ao navegador o formato do arquivo a ser baixado e gera o download automaticamente da mídia
+•../"arquivo-ou-página: Indico o retorno para uma página/arquivo da pasta anterior à da página atual
+•<picture></picture>: Configura sobre a imagem inserida. Conter a tag <img> dentro dela
+•source:media:type: Define largura máxima do navegador para troca da imagem inserida para outra de tamanho menor.
+•<audio></audio>: Forma simples de inserção de áudio
+-type="audio/mpeg": Informa ao navegador a extensão do arquivo de áudio
+-controls: Insere um player
+•<audio><source:src></audio>: Forma para maior configuração de inserção de áudio
+-preload="auto": Áudio carrega automaticamente junto ao site (não recomendável)
+-preload="metadata": Áudio carrega ao dar play (recomendável)
+•<video></video>: Forma simples de inserção de vídeo
+-width="tamanho": Tamanho do vídeo em px
+•<video><source:src></video>: Forma para maior configuração de inserção de vídeo

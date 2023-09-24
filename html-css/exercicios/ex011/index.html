@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HMTL5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"><!--Informo que, caso o navegador esteja com um tamamho máximo de 1000px de largura, a imagem "m" será carregada ao invés da "g" que está padrão na tag "img"-->
+        <source media="(max-width: 1050px)" srcset="1imagens/foto-m.png" type="image/png"> 
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+        <h1>Reproduzindo áudio</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML5</p>
+        <!--Forma mais simples--><audio src="midia/hells-bells-acdc.mp3" controls autoplay></audio> <!--Compatível com MP3 / WAV / OGG-->
+        <!--Forma mais completa--><audio preload="metadata" autoplay controls loop><!--preload: informa quando o arquivo será carregado (auto- automaticamente / metadata- assim que der o play / none- somente as informações antes)-->
+            <source src="midia/hells-bells-acdc.mp3" type="audio/mpeg"><!--mpeg é o midia type do MP3-->  
+            <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/hells-bells-acdc.mp3">Clique aqui para baixar o arquivo MP3</a>.</p>      
+        </audio>
+
+    </picture>
+</body>
+</html>

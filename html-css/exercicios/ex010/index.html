@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório publico no GitHub.</a></p> <!--para enviar o usuário que clicar em um link externo para uma outra guia, devemos usar, após o link o "target="_blank", para uma nova guia, e "rel="external" para após o clique, o link carregar fora da página inicial-->
+    <p>Você também pode acessar o <a href="https://youtube.com/cursoemvideo">canal gratuito no YouTube.</a></p> <!--Não usando "target" e "external", o link carrega na mesma guia. NÃO RECOMENDÁVEL PARA LINKS EXTERNOS!-->
+    <h1>Usando links inernos</h1>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página</a>. </p> <!--Usando o "rel="next", ajuda ao mecanismo de busca a saber que o link leva a um próximo nível de páginas.-->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a>.</p> <!--"target="_self" significa que o link deve abrir na mesma guia. Posso deixar sem este target, mas isso ajuda a estruturar melhor o código e busca para os mecanismos de busca-->
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livros/cartilha_de_aprendizagem_nube_saber.pdf" type="application/pdf" download="cartilha_de_aprendizagem_nube_saber.pdf" type="application/pdf">Baixar a cartilha em PDF </a></li>
+        <li><a href="livros/cartilha_de_aprendizagem_nube_saber.rar" type="application/zip">Cartilha compactada em Rar</a></li> <!--O "type="application/formato do arquivo" informa ao navegador o formato do arquivo a ser baixado e gera o download automaticamente da mídia-->
+    </ul>
+    <!--Para criar "macros", podemos abreviar tags. Ex.: ul>li*4>a - Cria uma Lista desordenada, com 4 itens com links-->
+</body>
+</html>
